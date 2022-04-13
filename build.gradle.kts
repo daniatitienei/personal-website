@@ -33,7 +33,6 @@ kotlin {
                 implementation(compose.web.core)
                 implementation(compose.runtime)
                 implementation(compose.web.svg)
-                implementation("com.squareup.retrofit2:retrofit:2.9.0")
             }
         }
         val jsTest by getting {

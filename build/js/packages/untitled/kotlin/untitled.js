@@ -74758,7 +74758,7 @@
   function _no_name_provided__234() {
   }
   _no_name_provided__234.prototype.invoke_wvxrrk_k$ = function ($this$Div) {
-    $this$Div.classes_70f81e_k$(['col-6']);
+    $this$Div.classes_70f81e_k$(['col-md-6']);
   };
   _no_name_provided__234.prototype.invoke_20e8_k$ = function (p1) {
     this.invoke_wvxrrk_k$((!(p1 == null) ? isInterface(p1, AttrsScope) : false) ? p1 : THROW_CCE());
@@ -75041,6 +75041,7 @@
   _no_name_provided__251.prototype.invoke_30dj7w_k$ = function ($this$style) {
     color($this$style, buttonColor);
     fontWeight($this$style, 'bold');
+    textDecoration($this$style, 'none');
   };
   _no_name_provided__251.prototype.invoke_20e8_k$ = function (p1) {
     this.invoke_30dj7w_k$((!(p1 == null) ? isInterface(p1, StyleScope) : false) ? p1 : THROW_CCE());
@@ -75257,7 +75258,7 @@
           {
             var tmp = _no_name_provided_$factory_223();
             var tmp_0 = $composer_0;
-            Div$composable(tmp, composableLambda(tmp_0, -819896006, true, _no_name_provided_$factory_224(element_2)), $composer_0, 54, 0);
+            Div$composable(tmp, composableLambda(tmp_0, -819896007, true, _no_name_provided_$factory_224(element_2)), $composer_0, 54, 0);
           }
         }
       }
@@ -75681,7 +75682,7 @@
   _no_name_provided__282.prototype.invoke_e3j55m_k$ = function ($this$Button, $composer, $changed) {
     var $composer_0 = $composer;
     if (!(($changed & 81 ^ 16) === 0) ? true : !$composer_0._get_skipping__0_k$()) {
-      A$composable(null, _no_name_provided_$factory_240(), ComposableSingletons$MainKt_getInstance()._lambda_17, $composer_0, 432, 1);
+      A$composable('mailto:daniatitienei@gmail.com', _no_name_provided_$factory_240(), ComposableSingletons$MainKt_getInstance()._lambda_17, $composer_0, 438, 0);
     } else
       $composer_0.skipToGroupEnd_sv8swh_k$();
   };
@@ -75882,51 +75883,51 @@
     var tmp_2 = this;
     tmp_2._lambda_4 = composableLambdaInstance(-985534287, false, _no_name_provided_$factory_199());
     var tmp_3 = this;
-    tmp_3._lambda_5 = composableLambdaInstance(-985531019, false, _no_name_provided_$factory_200());
+    tmp_3._lambda_5 = composableLambdaInstance(-985531721, false, _no_name_provided_$factory_200());
     var tmp_4 = this;
-    tmp_4._lambda_6 = composableLambdaInstance(-985530802, false, _no_name_provided_$factory_201());
+    tmp_4._lambda_6 = composableLambdaInstance(-985530488, false, _no_name_provided_$factory_201());
     var tmp_5 = this;
-    tmp_5._lambda_7 = composableLambdaInstance(-985530409, false, _no_name_provided_$factory_202());
+    tmp_5._lambda_7 = composableLambdaInstance(-985530607, false, _no_name_provided_$factory_202());
     var tmp_6 = this;
-    tmp_6._lambda_8 = composableLambdaInstance(-985538018, false, _no_name_provided_$factory_203());
+    tmp_6._lambda_8 = composableLambdaInstance(-985537924, false, _no_name_provided_$factory_203());
     var tmp_7 = this;
-    tmp_7._lambda_9 = composableLambdaInstance(-985536632, false, _no_name_provided_$factory_204());
+    tmp_7._lambda_9 = composableLambdaInstance(-985536532, false, _no_name_provided_$factory_204());
     var tmp_8 = this;
-    tmp_8._lambda_10 = composableLambdaInstance(-985536018, false, _no_name_provided_$factory_205());
+    tmp_8._lambda_10 = composableLambdaInstance(-985536046, false, _no_name_provided_$factory_205());
     var tmp_9 = this;
-    tmp_9._lambda_11 = composableLambdaInstance(-985535527, false, _no_name_provided_$factory_206());
+    tmp_9._lambda_11 = composableLambdaInstance(-985535683, false, _no_name_provided_$factory_206());
     var tmp_10 = this;
-    tmp_10._lambda_12 = composableLambdaInstance(-985535578, false, _no_name_provided_$factory_207());
+    tmp_10._lambda_12 = composableLambdaInstance(-985535606, false, _no_name_provided_$factory_207());
     var tmp_11 = this;
-    tmp_11._lambda_13 = composableLambdaInstance(-985536461, false, _no_name_provided_$factory_208());
+    tmp_11._lambda_13 = composableLambdaInstance(-985536489, false, _no_name_provided_$factory_208());
     var tmp_12 = this;
-    tmp_12._lambda_14 = composableLambdaInstance(-985535174, false, _no_name_provided_$factory_209());
+    tmp_12._lambda_14 = composableLambdaInstance(-985535202, false, _no_name_provided_$factory_209());
     var tmp_13 = this;
-    tmp_13._lambda_15 = composableLambdaInstance(-985534986, false, _no_name_provided_$factory_210());
+    tmp_13._lambda_15 = composableLambdaInstance(-985535014, false, _no_name_provided_$factory_210());
     var tmp_14 = this;
-    tmp_14._lambda_16 = composableLambdaInstance(-985535289, false, _no_name_provided_$factory_211());
+    tmp_14._lambda_16 = composableLambdaInstance(-985535445, false, _no_name_provided_$factory_211());
     var tmp_15 = this;
-    tmp_15._lambda_17 = composableLambdaInstance(-985542324, false, _no_name_provided_$factory_212());
+    tmp_15._lambda_17 = composableLambdaInstance(-985542376, false, _no_name_provided_$factory_212());
     var tmp_16 = this;
-    tmp_16._lambda_18 = composableLambdaInstance(-985534849, false, _no_name_provided_$factory_213());
+    tmp_16._lambda_18 = composableLambdaInstance(-985534877, false, _no_name_provided_$factory_213());
     var tmp_17 = this;
-    tmp_17._lambda_19 = composableLambdaInstance(-985535832, false, _no_name_provided_$factory_214());
+    tmp_17._lambda_19 = composableLambdaInstance(-985535860, false, _no_name_provided_$factory_214());
     var tmp_18 = this;
-    tmp_18._lambda_20 = composableLambdaInstance(-985542070, false, _no_name_provided_$factory_215());
+    tmp_18._lambda_20 = composableLambdaInstance(-985542122, false, _no_name_provided_$factory_215());
     var tmp_19 = this;
-    tmp_19._lambda_21 = composableLambdaInstance(-985541875, false, _no_name_provided_$factory_216());
+    tmp_19._lambda_21 = composableLambdaInstance(-985541671, false, _no_name_provided_$factory_216());
     var tmp_20 = this;
-    tmp_20._lambda_22 = composableLambdaInstance(-985541181, false, _no_name_provided_$factory_217());
+    tmp_20._lambda_22 = composableLambdaInstance(-985541233, false, _no_name_provided_$factory_217());
     var tmp_21 = this;
-    tmp_21._lambda_23 = composableLambdaInstance(-985542015, false, _no_name_provided_$factory_218());
+    tmp_21._lambda_23 = composableLambdaInstance(-985541299, false, _no_name_provided_$factory_218());
     var tmp_22 = this;
-    tmp_22._lambda_24 = composableLambdaInstance(-985541452, false, _no_name_provided_$factory_219());
+    tmp_22._lambda_24 = composableLambdaInstance(-985540864, false, _no_name_provided_$factory_219());
     var tmp_23 = this;
-    tmp_23._lambda_25 = composableLambdaInstance(-985541505, false, _no_name_provided_$factory_220());
+    tmp_23._lambda_25 = composableLambdaInstance(-985541429, false, _no_name_provided_$factory_220());
     var tmp_24 = this;
-    tmp_24._lambda_26 = composableLambdaInstance(-985542503, false, _no_name_provided_$factory_221());
+    tmp_24._lambda_26 = composableLambdaInstance(-985541787, false, _no_name_provided_$factory_221());
     var tmp_25 = this;
-    tmp_25._lambda_27 = composableLambdaInstance(-985542600, false, _no_name_provided_$factory_222());
+    tmp_25._lambda_27 = composableLambdaInstance(-985542524, false, _no_name_provided_$factory_222());
   }
   ComposableSingletons$MainKt.prototype._get_lambda_1__0_k$ = function () {
     return this._lambda_1_1;
@@ -76022,14 +76023,14 @@
   }
   function ProjectCard$composable(project, $composer, $changed) {
     var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_ha5a7z_k$(-473830771);
+    $composer_0 = $composer_0.startRestartGroup_ha5a7z_k$(-473830768);
     var $dirty = $changed;
     if (($changed & 14) === 0)
       $dirty = $dirty | ($composer_0.changed_wi7j7l_k$(project) ? 4 : 2);
     if (!(($dirty & 11 ^ 2) === 0) ? true : !$composer_0._get_skipping__0_k$()) {
       var tmp = _no_name_provided_$factory_254();
       var tmp_0 = $composer_0;
-      Div$composable(tmp, composableLambda(tmp_0, -819892301, true, _no_name_provided_$factory_255(project)), $composer_0, 54, 0);
+      Div$composable(tmp, composableLambda(tmp_0, -819892274, true, _no_name_provided_$factory_255(project)), $composer_0, 54, 0);
     } else
       $composer_0.skipToGroupEnd_sv8swh_k$();
     var tmp0_safe_receiver = $composer_0.endRestartGroup_0_k$();
@@ -76041,7 +76042,7 @@
   }
   function Contact$composable($composer, $changed) {
     var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_ha5a7z_k$(1219965894);
+    $composer_0 = $composer_0.startRestartGroup_ha5a7z_k$(1219965828);
     if (!($changed === 0) ? true : !$composer_0._get_skipping__0_k$()) {
       Footer$composable(_no_name_provided_$factory_257(), ComposableSingletons$MainKt_getInstance()._lambda_7, $composer_0, 54, 0);
     } else
@@ -76057,7 +76058,7 @@
     var type_0 = {_v: type};
     var target_1 = {_v: target_0};
     var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_ha5a7z_k$(-43857468);
+    $composer_0 = $composer_0.startRestartGroup_ha5a7z_k$(-43857534);
     var $dirty = $changed;
     if (!(($default & 1) === 0))
       $dirty = $dirty | 6;
@@ -76125,7 +76126,7 @@
       }
       var tmp_1 = tmp$ret$3;
       var tmp_2 = $composer_0;
-      A$composable(link, tmp_1, composableLambda(tmp_2, -819890353, true, _no_name_provided_$factory_260(type_0, $dirty, icon)), $composer_0, 384 | 14 & $dirty >> 6, 0);
+      A$composable(link, tmp_1, composableLambda(tmp_2, -819890191, true, _no_name_provided_$factory_260(type_0, $dirty, icon)), $composer_0, 384 | 14 & $dirty >> 6, 0);
     } else
       $composer_0.skipToGroupEnd_sv8swh_k$();
     var tmp0_safe_receiver = $composer_0.endRestartGroup_0_k$();
@@ -76137,7 +76138,7 @@
   }
   function AboutMe$composable(yearsOfExperience, projectsCounter, $composer, $changed) {
     var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_ha5a7z_k$(750903962);
+    $composer_0 = $composer_0.startRestartGroup_ha5a7z_k$(750903896);
     var $dirty = $changed;
     if (($changed & 14) === 0)
       $dirty = $dirty | ($composer_0.changed_ha5a7z_k$(yearsOfExperience) ? 4 : 2);
@@ -76146,7 +76147,7 @@
     if (!(($dirty & 91 ^ 18) === 0) ? true : !$composer_0._get_skipping__0_k$()) {
       var tmp = _no_name_provided_$factory_262();
       var tmp_0 = $composer_0;
-      Div$composable(tmp, composableLambda(tmp_0, -819891099, true, _no_name_provided_$factory_263(yearsOfExperience, projectsCounter)), $composer_0, 54, 0);
+      Div$composable(tmp, composableLambda(tmp_0, -819891133, true, _no_name_provided_$factory_263(yearsOfExperience, projectsCounter)), $composer_0, 54, 0);
     } else
       $composer_0.skipToGroupEnd_sv8swh_k$();
     var tmp0_safe_receiver = $composer_0.endRestartGroup_0_k$();
@@ -76158,7 +76159,7 @@
   }
   function Description$composable($composer, $changed) {
     var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_ha5a7z_k$(-481179863);
+    $composer_0 = $composer_0.startRestartGroup_ha5a7z_k$(-481179891);
     if (!($changed === 0) ? true : !$composer_0._get_skipping__0_k$()) {
       Div$composable(_no_name_provided_$factory_265(), ComposableSingletons$MainKt_getInstance()._lambda_19, $composer_0, 54, 0);
     } else
@@ -76172,7 +76173,7 @@
   }
   function NavBar$composable($composer, $changed) {
     var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_ha5a7z_k$(1182892640);
+    $composer_0 = $composer_0.startRestartGroup_ha5a7z_k$(1182892716);
     sourceInformation($composer_0, 'C(NavBar$composable)');
     if (!($changed === 0) ? true : !$composer_0._get_skipping__0_k$()) {
       {
@@ -76254,8 +76255,6 @@
   }
   _no_name_provided__294.prototype.invoke_30dj7w_k$ = function ($this$style) {
     borderRadius($this$style, _get_percent_(20));
-    width($this$style, _get_percent_(25));
-    height($this$style, _get_percent_(25));
   };
   _no_name_provided__294.prototype.invoke_20e8_k$ = function (p1) {
     this.invoke_30dj7w_k$((!(p1 == null) ? isInterface(p1, StyleScope) : false) ? p1 : THROW_CCE());
@@ -76367,9 +76366,9 @@
     var $composer_0 = $composer;
     if (!(($changed & 81 ^ 16) === 0) ? true : !$composer_0._get_skipping__0_k$()) {
       var tmp = $composer_0;
-      H4$composable(null, composableLambda(tmp, -819893166, true, _no_name_provided_$factory_278(this._$project_1)), $composer_0, 48, 1);
+      H4$composable(null, composableLambda(tmp, -819893228, true, _no_name_provided_$factory_278(this._$project_1)), $composer_0, 48, 1);
       var tmp_0 = $composer_0;
-      P$composable(null, composableLambda(tmp_0, -819892848, true, _no_name_provided_$factory_279(this._$project_1)), $composer_0, 48, 1);
+      P$composable(null, composableLambda(tmp_0, -819893166, true, _no_name_provided_$factory_279(this._$project_1)), $composer_0, 48, 1);
       if (this._$project_1._googlePlay) {
         A$composable(this._$project_1._googlePlayLink, _no_name_provided_$factory_280(), ComposableSingletons$MainKt_getInstance()._lambda_5, $composer_0, 432, 0);
       }} else
@@ -76394,7 +76393,7 @@
       Img$composable(this._$project_2._imgUrl, null, _no_name_provided_$factory_273(), $composer_0, 384, 2);
       var tmp = _no_name_provided_$factory_274();
       var tmp_0 = $composer_0;
-      Div$composable(tmp, composableLambda(tmp_0, -819893179, true, _no_name_provided_$factory_275(this._$project_2)), $composer_0, 54, 0);
+      Div$composable(tmp, composableLambda(tmp_0, -819893241, true, _no_name_provided_$factory_275(this._$project_2)), $composer_0, 54, 0);
     } else
       $composer_0.skipToGroupEnd_sv8swh_k$();
   };
@@ -76496,7 +76495,7 @@
     this._$icon_0 = $icon;
   }
   _no_name_provided__309.prototype.invoke_89r3dp_k$ = function ($this$I) {
-    $this$I.classes_70f81e_k$([this._$type_0._v, this._$icon_0, 'fa-3x']);
+    $this$I.classes_70f81e_k$([this._$type_0._v, this._$icon_0, 'fa-2x']);
   };
   _no_name_provided__309.prototype.invoke_20e8_k$ = function (p1) {
     this.invoke_89r3dp_k$((!(p1 == null) ? isInterface(p1, AttrsScope) : false) ? p1 : THROW_CCE());
@@ -76595,7 +76594,7 @@
   function _no_name_provided__312() {
   }
   _no_name_provided__312.prototype.invoke_wvxrrk_k$ = function ($this$Div) {
-    $this$Div.classes_70f81e_k$(['row']);
+    $this$Div.classes_70f81e_k$(['row', 'd-flex', 'justify-content-center']);
     $this$Div.id_6wfw3l_k$('scrollspyAboutMe');
     Unit_getInstance();
   };
@@ -76731,7 +76730,7 @@
     var $composer_0 = $composer;
     if (!(($changed & 81 ^ 16) === 0) ? true : !$composer_0._get_skipping__0_k$()) {
       var tmp = $composer_0;
-      H1$composable(null, composableLambda(tmp, -819891378, true, _no_name_provided_$factory_292(this._$yearsOfExperience_0)), $composer_0, 48, 1);
+      H1$composable(null, composableLambda(tmp, -819891414, true, _no_name_provided_$factory_292(this._$yearsOfExperience_0)), $composer_0, 48, 1);
       H5$composable(_no_name_provided_$factory_293(), ComposableSingletons$MainKt_getInstance()._lambda_9, $composer_0, 54, 0);
     } else
       $composer_0.skipToGroupEnd_sv8swh_k$();
@@ -76766,7 +76765,7 @@
     var $composer_0 = $composer;
     if (!(($changed & 81 ^ 16) === 0) ? true : !$composer_0._get_skipping__0_k$()) {
       var tmp = $composer_0;
-      H1$composable(null, composableLambda(tmp, -819891926, true, _no_name_provided_$factory_295(this._$projectsCounter_0)), $composer_0, 48, 1);
+      H1$composable(null, composableLambda(tmp, -819891962, true, _no_name_provided_$factory_295(this._$projectsCounter_0)), $composer_0, 48, 1);
       H5$composable(_no_name_provided_$factory_296(), ComposableSingletons$MainKt_getInstance()._lambda_10, $composer_0, 54, 0);
     } else
       $composer_0.skipToGroupEnd_sv8swh_k$();
@@ -76829,10 +76828,10 @@
     if (!(($changed & 81 ^ 16) === 0) ? true : !$composer_0._get_skipping__0_k$()) {
       var tmp = _no_name_provided_$factory_287();
       var tmp_0 = $composer_0;
-      Div$composable(tmp, composableLambda(tmp_0, -819891419, true, _no_name_provided_$factory_288(this._$yearsOfExperience_1)), $composer_0, 54, 0);
+      Div$composable(tmp, composableLambda(tmp_0, -819891455, true, _no_name_provided_$factory_288(this._$yearsOfExperience_1)), $composer_0, 54, 0);
       var tmp_1 = _no_name_provided_$factory_289();
       var tmp_2 = $composer_0;
-      Div$composable(tmp_1, composableLambda(tmp_2, -819891967, true, _no_name_provided_$factory_290(this._$projectsCounter_1)), $composer_0, 54, 0);
+      Div$composable(tmp_1, composableLambda(tmp_2, -819891715, true, _no_name_provided_$factory_290(this._$projectsCounter_1)), $composer_0, 54, 0);
       Div$composable(_no_name_provided_$factory_291(), ComposableSingletons$MainKt_getInstance()._lambda_13, $composer_0, 54, 0);
     } else
       $composer_0.skipToGroupEnd_sv8swh_k$();
@@ -76858,7 +76857,7 @@
       Div$composable(_no_name_provided_$factory_284(), ComposableSingletons$MainKt_getInstance()._lambda_8, $composer_0, 54, 0);
       var tmp = _no_name_provided_$factory_285();
       var tmp_0 = $composer_0;
-      Div$composable(tmp, composableLambda(tmp_0, -819891271, true, _no_name_provided_$factory_286(this._$yearsOfExperience_2, this._$projectsCounter_2)), $composer_0, 54, 0);
+      Div$composable(tmp, composableLambda(tmp_0, -819891307, true, _no_name_provided_$factory_286(this._$yearsOfExperience_2, this._$projectsCounter_2)), $composer_0, 54, 0);
     } else
       $composer_0.skipToGroupEnd_sv8swh_k$();
   };

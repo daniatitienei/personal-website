@@ -67,7 +67,7 @@ fun main() {
                     Projects.forEach { project ->
                         Div(
                             attrs = {
-                                classes("col-6")
+                                classes("col-md-6")
                             }
                         ) {
                             ProjectCard(project)
@@ -94,8 +94,6 @@ private fun ProjectCard(project: Project) {
         Img(project.imgUrl, attrs = {
             style {
                 borderRadius(20.percent)
-                width(25.percent)
-                height(25.percent)
             }
             classes("col-4")
         })
@@ -172,7 +170,7 @@ private fun ContactIcon(type: String = "fa-brands", icon: String, link: String, 
     ) {
         I(
             attrs = {
-                classes(type, icon, "fa-3x")
+                classes(type, icon, "fa-2x")
             }
         )
     }
@@ -182,7 +180,7 @@ private fun ContactIcon(type: String = "fa-brands", icon: String, link: String, 
 private fun AboutMe(yearsOfExperience: Int, projectsCounter: Int) {
     Div(
         attrs = {
-            classes("row")
+            classes("row", "d-flex", "justify-content-center")
             id("scrollspyAboutMe")
         }
     ) {
@@ -202,7 +200,7 @@ private fun AboutMe(yearsOfExperience: Int, projectsCounter: Int) {
         }
         Div(
             attrs = {
-                classes("col-2", "d-flex", "flex-column", "justify-content-center")
+                classes("col-2", "d-flex", "flex-column", "justify-content-center", )
             }
         ) {
             Div(
@@ -300,10 +298,12 @@ private fun Description() {
             }
         ) {
             A(
+                href = "mailto:daniatitienei@gmail.com",
                 attrs = {
                     style {
                         color(buttonColor)
                         fontWeight("bold")
+                        textDecoration("none")
                     }
                 }
             ) {
