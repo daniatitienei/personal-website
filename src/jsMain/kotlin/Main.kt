@@ -1,12 +1,12 @@
 import androidx.compose.runtime.*
 import domain.models.Project
+import kotlinx.coroutines.delay
 import org.jetbrains.compose.web.attributes.ATarget
 import org.jetbrains.compose.web.attributes.href
 import org.jetbrains.compose.web.attributes.target
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 import org.jetbrains.compose.web.renderComposable
-import org.jetbrains.compose.web.svg.Image
 import ui.utils.Projects
 import ui.utils.buttonColor
 
@@ -14,9 +14,20 @@ fun main() {
     renderComposable(rootElementId = "root") {
 
         val yearsOfExperience by remember { mutableStateOf(2) }
+        var yearsOfExperienceCounter by remember { mutableStateOf(0) }
 
-        val projectsCounter by remember {
-            mutableStateOf(5)
+        val projects by remember { mutableStateOf(5) }
+        var projectsCounter by remember { mutableStateOf(0) }
+
+        LaunchedEffect(true) {
+            while (yearsOfExperienceCounter < yearsOfExperience) {
+                yearsOfExperienceCounter++
+                delay(200)
+            }
+            while (projectsCounter < projects) {
+                projectsCounter++
+                delay(150)
+            }
         }
 
         Style {
@@ -44,9 +55,12 @@ fun main() {
         ) {
             NavBar()
 
-            AboutMe(yearsOfExperience, projectsCounter)
+            AboutMe(yearsOfExperienceCounter, projectsCounter)
 
-            Div {
+            Div(
+                attrs = {
+                }
+            ) {
                 H1(
                     attrs = {
                         id("scrollspyLatestWork")
@@ -187,7 +201,7 @@ private fun AboutMe(yearsOfExperience: Int, projectsCounter: Int) {
         Description()
         Div(
             attrs = {
-                classes("col")
+                classes("col-md", "p-2")
             }
         ) {
 
@@ -195,12 +209,15 @@ private fun AboutMe(yearsOfExperience: Int, projectsCounter: Int) {
                 src = "https://media-exp1.licdn.com/dms/image/C4E03AQHIc1IDcbSzfg/profile-displayphoto-shrink_800_800/0/1637680096577?e=1654732800&v=beta&t=2yIHT-4xjwjEAMhiBX1I4a3VS5Ovslh5PMSoqqVWnuM",
                 attrs = {
                     classes("img-fluid")
+                    style {
+                        borderRadius(20.px)
+                    }
                 }
             )
         }
         Div(
             attrs = {
-                classes("col-2", "d-flex", "flex-column", "justify-content-center", )
+                classes("col-md-2", "d-flex", "flex-column", "justify-content-center", "p-2")
             }
         ) {
             Div(
@@ -267,7 +284,7 @@ private fun AboutMe(yearsOfExperience: Int, projectsCounter: Int) {
 private fun Description() {
     Div(
         attrs = {
-            classes("col", "d-flex", "flex-column", "justify-content-center")
+            classes("col-md", "d-flex", "flex-column", "justify-content-center", "p-2")
         }
     ) {
         H1(
@@ -279,7 +296,11 @@ private fun Description() {
         ) {
             Text("Atitienei Daniel")
         }
-        H2 {
+        H2(
+            attrs = {
+                id("career")
+            }
+        ) {
             Text("Android Developer")
         }
         P(
