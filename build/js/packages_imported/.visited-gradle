@@ -40,6 +40,15 @@
     },
     "461b7ad09345422aa79cbc5fae1280ba": {
       "src": "C:\\Users\\Atitienei Daniel\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.compose.web\\test-utils-js\\1.1.0\\22e0461e136ea1b10611d767f86f1f3137892ba2\\test-utils-js-1.1.0.klib"
+    },
+    "d7691179af746f164c0ca243b9795187": {
+      "src": "C:\\Users\\Atitienei Daniel\\.gradle\\caches\\modules-2\\files-2.1\\com.squareup.retrofit2\\retrofit\\2.9.0\\d8fdfbd5da952141a665a403348b74538efc05ff\\retrofit-2.9.0.jar"
+    },
+    "ecf93fc88569f190d8e08c9e401048c6": {
+      "src": "C:\\Users\\Atitienei Daniel\\.gradle\\caches\\modules-2\\files-2.1\\com.squareup.okhttp3\\okhttp\\3.14.9\\3e6d101343c7ea687cd593e4990f73b25c878383\\okhttp-3.14.9.jar"
+    },
+    "7042920b3ed95368f2c19288241f777c": {
+      "src": "C:\\Users\\Atitienei Daniel\\.gradle\\caches\\modules-2\\files-2.1\\com.squareup.okio\\okio\\1.17.2\\78c7820b205002da4d2d137f6f312bd64b3d6049\\okio-1.17.2.jar"
     }
   }
 }

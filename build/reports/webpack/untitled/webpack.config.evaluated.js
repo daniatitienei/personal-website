@@ -21,11 +21,11 @@
   },
   entry: {
     main: [
-      'C:\\Users\\Atitienei Daniel\\IdeaProjects\\untitled\\build\\js\\packages\\untitled\\kotlin\\untitled.js'
+      'D:\\Projects\\personal-website\\build\\js\\packages\\untitled\\kotlin\\untitled.js'
     ]
   },
   output: {
-    path: 'C:\\Users\\Atitienei Daniel\\IdeaProjects\\untitled\\build\\distributions',
+    path: 'D:\\Projects\\personal-website\\build\\distributions',
     filename: [Function: filename],
     library: 'untitled',
     libraryTarget: 'umd',
@@ -42,7 +42,7 @@
   devServer: {
     open: true,
     contentBase: [
-      'C:\\Users\\Atitienei Daniel\\IdeaProjects\\untitled\\build\\processedResources\\js\\main'
+      'D:\\Projects\\personal-website\\build\\processedResources\\js\\main'
     ]
   }
 }

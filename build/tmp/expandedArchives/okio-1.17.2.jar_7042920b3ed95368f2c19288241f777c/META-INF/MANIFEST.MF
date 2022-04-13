@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: okio
+Archiver-Version: Plexus Archiver
+Built-By: jwilson
+Created-By: Apache Maven 3.5.2
+Build-Jdk: 1.8.0_162
+

@@ -13,11 +13,11 @@ let config = {
 
 // entry
 config.entry = {
-    main: ["C:\\Users\\Atitienei Daniel\\IdeaProjects\\untitled\\build\\js\\packages\\untitled\\kotlin\\untitled.js"]
+    main: ["D:\\Projects\\personal-website\\build\\js\\packages\\untitled\\kotlin\\untitled.js"]
 };
 
 config.output = {
-    path: "C:\\Users\\Atitienei Daniel\\IdeaProjects\\untitled\\build\\distributions",
+    path: "D:\\Projects\\personal-website\\build\\distributions",
     filename: (chunkData) => {
         return chunkData.chunk.name === 'main'
             ? "untitled.js"
@@ -46,7 +46,7 @@ Object.assign(config.stats, config.stats, {
 config.devServer = {
   "open": true,
   "contentBase": [
-    "C:\\Users\\Atitienei Daniel\\IdeaProjects\\untitled\\build\\processedResources\\js\\main"
+    "D:\\Projects\\personal-website\\build\\processedResources\\js\\main"
   ]
 };
 
@@ -65,7 +65,7 @@ config.devServer = {
     const util = require('util');
     const fs = require('fs');
     const evaluatedConfig = util.inspect(config, {showHidden: false, depth: null, compact: false});
-    fs.writeFile("C:\\Users\\Atitienei Daniel\\IdeaProjects\\untitled\\build\\reports\\webpack\\untitled\\webpack.config.evaluated.js", evaluatedConfig, function (err) {});
+    fs.writeFile("D:\\Projects\\personal-website\\build\\reports\\webpack\\untitled\\webpack.config.evaluated.js", evaluatedConfig, function (err) {});
 })(config);
 
 module.exports = config

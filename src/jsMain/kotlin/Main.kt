@@ -1,25 +1,36 @@
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
+import domain.models.Project
+import org.jetbrains.compose.web.attributes.ATarget
 import org.jetbrains.compose.web.attributes.href
+import org.jetbrains.compose.web.attributes.target
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 import org.jetbrains.compose.web.renderComposable
 import org.jetbrains.compose.web.svg.Image
-import org.w3c.dom.HTMLFontElement
-import ui.backgroundColor
-import ui.buttonColor
+import ui.utils.Projects
+import ui.utils.buttonColor
 
 fun main() {
-
     renderComposable(rootElementId = "root") {
+
+        val yearsOfExperience by remember { mutableStateOf(2) }
+
+        val projectsCounter by remember {
+            mutableStateOf(5)
+        }
 
         Style {
             "body" {
-                backgroundColor(ui.backgroundColor)
+                backgroundColor(ui.utils.backgroundColor)
             }
 
             "*" {
                 color(Color.white)
                 fontFamily("Lato")
+            }
+
+            className("details").style {
+                marginBottom(15.px)
             }
         }
 
@@ -33,62 +44,270 @@ fun main() {
         ) {
             NavBar()
 
-            Div(
-                attrs = {
-                    classes("row")
-                }
-            ) {
-                Div(
+            AboutMe(yearsOfExperience, projectsCounter)
+
+            Div {
+                H1(
                     attrs = {
-                        classes("col")
+                        id("scrollspyLatestWork")
+                        classes("text-center")
+                        style {
+                            marginTop(10.percent)
+                        }
                     }
                 ) {
-                    H1 {
-                        Text("Atitienei Daniel")
-                    }
-                    H2 {
-                        Text("Android Developer")
-                    }
-                    P(
-                        attrs = {
-                            style {
-                                color(Color.RGBA(256, 256, 256, 0.7))
-                            }
-                        }
-                    ) {
-                        Text("I found my passion for programming 2 years ago when I was 15. In this period I've worked with a lot of different technologies and programming languages. \n\n Nowadays, I’m specialize in native Android development, but I still consider that my past experience with other technologies helped me.")
-                    }
+                    Text("Latest work")
+                }
 
-                    Button(
-                        attrs = {
-                            classes("btn")
-                        }
-                    ) {
-                        A(
+                Div(
+                    attrs = {
+                        classes("row")
+                    }
+                ) {
+                    Projects.forEach { project ->
+                        Div(
                             attrs = {
-                                style {
-                                    color(buttonColor)
-                                    fontWeight("bold")
-                                }
+                                classes("col-6")
                             }
                         ) {
-                            Text("LET'S TALK")
+                            ProjectCard(project)
                         }
                     }
                 }
-                Div(
+            }
+
+            Contact()
+        }
+    }
+}
+
+@Composable
+private fun ProjectCard(project: Project) {
+    Div(
+        attrs = {
+            classes("row", "align-items-center")
+            style {
+                marginTop(10.percent)
+            }
+        }
+    ) {
+        Img(project.imgUrl, attrs = {
+            style {
+                borderRadius(20.percent)
+                width(25.percent)
+                height(25.percent)
+            }
+            classes("col-4")
+        })
+        Div(
+            attrs = {
+                classes("col")
+                style {
+                    marginLeft(2.percent)
+                }
+            }
+        ) {
+            H4 {
+                Text(project.title)
+            }
+            P {
+                Text(project.description)
+            }
+            if (project.googlePlay)
+                A(
+                    href = project.googlePlayLink,
                     attrs = {
-                        classes("col")
+                        target(ATarget.Blank)
                     }
                 ) {
-
                     Img(
-                        src = "https://media-exp1.licdn.com/dms/image/C4E03AQHIc1IDcbSzfg/profile-displayphoto-shrink_800_800/0/1637680096577?e=1654732800&v=beta&t=2yIHT-4xjwjEAMhiBX1I4a3VS5Ovslh5PMSoqqVWnuM",
+                        "https://en.logodownload.org/wp-content/uploads/2019/06/get-it-on-google-play-badge.png",
                         attrs = {
-                            classes("img-fluid")
-                        }
-                    )
+                            style {
+                                width(160.px)
+                                height(50.px)
+                            }
+                        })
                 }
+        }
+    }
+}
+
+@Composable
+private fun Contact() {
+    Footer(
+        attrs = {
+            id("scrollspyContact")
+            style {
+                padding(8.percent, 0.px, 3.percent, 0.px)
+            }
+        }
+    ) {
+        Div(
+            attrs = {
+                classes("d-flex", "justify-content-center")
+            }
+        ) {
+            ContactIcon(icon = "fa-github", link = "https://github.com/daniatitienei")
+            ContactIcon(icon = "fa-linkedin", link = "https://www.linkedin.com/in/daniel-atitienei-07446020a/")
+            ContactIcon(
+                type = "fa-solid",
+                icon = "fa-envelope", link = "mailto:daniatitienei@gmail.com",
+                target = ATarget.Self
+            )
+        }
+    }
+}
+
+@Composable
+private fun ContactIcon(type: String = "fa-brands", icon: String, link: String, target: ATarget = ATarget.Blank) {
+    A(
+        href = link,
+        attrs = {
+            target(target)
+            style {
+                padding(35.px)
+            }
+        }
+    ) {
+        I(
+            attrs = {
+                classes(type, icon, "fa-3x")
+            }
+        )
+    }
+}
+
+@Composable
+private fun AboutMe(yearsOfExperience: Int, projectsCounter: Int) {
+    Div(
+        attrs = {
+            classes("row")
+            id("scrollspyAboutMe")
+        }
+    ) {
+        Description()
+        Div(
+            attrs = {
+                classes("col")
+            }
+        ) {
+
+            Img(
+                src = "https://media-exp1.licdn.com/dms/image/C4E03AQHIc1IDcbSzfg/profile-displayphoto-shrink_800_800/0/1637680096577?e=1654732800&v=beta&t=2yIHT-4xjwjEAMhiBX1I4a3VS5Ovslh5PMSoqqVWnuM",
+                attrs = {
+                    classes("img-fluid")
+                }
+            )
+        }
+        Div(
+            attrs = {
+                classes("col-2", "d-flex", "flex-column", "justify-content-center")
+            }
+        ) {
+            Div(
+                attrs = {
+                    classes("details")
+                }
+            ) {
+                H1 {
+                    Text("$yearsOfExperience+")
+                }
+                H5(
+                    attrs = {
+                        style {
+                            color(Color.lightgray)
+                        }
+                    }
+                ) {
+                    Text("Years of experience")
+                }
+            }
+            Div(
+                attrs = {
+                    classes("details")
+                }
+            ) {
+                H1 {
+                    Text("$projectsCounter+")
+                }
+                H5(
+                    attrs = {
+                        style {
+                            color(Color.lightgray)
+                        }
+                    }
+                ) {
+                    Text("Completed projects")
+                }
+            }
+            Div(
+                attrs = {
+                    classes("details")
+                }
+            ) {
+                Span(
+                    attrs = {
+                        style {
+                            letterSpacing(2.px)
+                            color(Color.lightgray)
+                            marginBottom(5.px)
+                        }
+                    }
+                ) {
+                    Text("SERVICES")
+                }
+                P {
+                    Text("Android mobile apps")
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun Description() {
+    Div(
+        attrs = {
+            classes("col", "d-flex", "flex-column", "justify-content-center")
+        }
+    ) {
+        H1(
+            attrs = {
+                style {
+                    letterSpacing(2.px)
+                }
+            }
+        ) {
+            Text("Atitienei Daniel")
+        }
+        H2 {
+            Text("Android Developer")
+        }
+        P(
+            attrs = {
+                style {
+                    color(Color.RGBA(256, 256, 256, 0.7))
+                }
+            }
+        ) {
+            Text("I found my passion for programming 2 years ago when I was 15. In this period I've worked with a lot of different technologies and programming languages. \n\n Nowadays, I’m specialize in native Android development, but I still consider that my past experience with other technologies helped me.")
+        }
+
+        Button(
+            attrs = {
+                classes("btn", "align-self-start")
+            }
+        ) {
+            A(
+                attrs = {
+                    style {
+                        color(buttonColor)
+                        fontWeight("bold")
+                    }
+                }
+            ) {
+                Text("LET'S TALK")
             }
         }
     }
@@ -109,7 +328,7 @@ fun NavBar() {
 
     Nav(
         attrs = {
-            classes("navbar")
+            classes("navbar", "sticky-top")
         }
     ) {
         Ul(
@@ -125,7 +344,7 @@ fun NavBar() {
                 A(
                     attrs = {
                         classes("link-light")
-                        href("#")
+                        href("#scrollspyAboutMe")
                     }
                 ) {
                     Text("About me")
@@ -139,7 +358,7 @@ fun NavBar() {
                 A(
                     attrs = {
                         classes("link-light")
-                        href("#")
+                        href("#scrollspyLatestWork")
                     }
                 ) {
                     Text("Latest work")
@@ -153,7 +372,7 @@ fun NavBar() {
                 A(
                     attrs = {
                         classes("link-light")
-                        href("#")
+                        href("#scrollspyContact")
                     }
                 ) {
                     Text("Contact")
